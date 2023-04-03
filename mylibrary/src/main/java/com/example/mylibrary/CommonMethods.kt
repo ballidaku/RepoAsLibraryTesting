@@ -7,7 +7,7 @@ object CommonMethods {
 
     private var toast: Toast? = null
 
-    fun showToast(context: Context?,
+    fun teraMeraKiRishta(context: Context?,
             message: String?) {
         toast?.cancel()
         toast = Toast.makeText(context, message, Toast.LENGTH_SHORT)

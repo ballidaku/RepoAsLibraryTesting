@@ -43,22 +43,22 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId = 'com.ballidaku'
-            artifactId = 'mylibrary'
-            version = '1.0'
-//            from components.android
-        }
-    }
-    repositories {
-        maven {
-            url 'https://maven.pkg.github.com/ballidaku/RepoAsLibraryTesting'
-            credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
-            }
-        }
-    }
-}
+//publishing {
+//    publications {
+//        maven(MavenPublication) {
+//            groupId = 'com.ballidaku'
+//            artifactId = 'mylibrary'
+//            version = '1.0'
+////            from components.android
+//        }
+//    }
+//    repositories {
+//        maven {
+//            url 'https://maven.pkg.github.com/ballidaku/RepoAsLibraryTesting'
+//            credentials {
+//                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+//                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+//            }
+//        }
+//    }
+//}

@@ -1,9 +1,9 @@
-package com.ballidaku.mylibrary
+package com.toaster.mylibrary
 
 import android.content.Context
 import android.widget.Toast
 
-object CommonMethods {
+object Toaster {
 
     private var toast: Toast? = null
 

@@ -1,7 +1,9 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
+
 
 android {
     namespace 'com.example.mylibrary'
@@ -39,4 +41,24 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.ballidaku'
+            artifactId = 'mylibrary'
+            version = '1.0'
+//            from components.android
+        }
+    }
+    repositories {
+        maven {
+            url 'https://maven.pkg.github.com/ballidaku/RepoAsLibraryTesting'
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+            }
+        }
+    }
 }

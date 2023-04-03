@@ -1,10 +1,11 @@
-package com.example.repoaslibrarytesting
+package com.ballidaku.repoaslibrarytesting
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.example.mylibrary.CommonMethods
+import com.ballidaku.mylibrary.CommonMethods
+import com.example.repoaslibrarytesting.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

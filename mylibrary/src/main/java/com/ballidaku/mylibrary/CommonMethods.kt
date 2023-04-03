@@ -1,4 +1,4 @@
-package com.example.mylibrary
+package com.ballidaku.mylibrary
 
 import android.content.Context
 import android.widget.Toast

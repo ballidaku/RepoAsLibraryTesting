@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.toaster.mylibrary.CommonMethods
 import com.example.repoaslibrarytesting.R
 import com.toaster.mylibrary.Toaster
 

@@ -1,4 +1,4 @@
-package com.ballidaku.mylibrary
+package com.toaster.repoaslibrarytesting
 
 import org.junit.Test
 

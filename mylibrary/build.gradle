@@ -65,8 +65,8 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
 
-                groupId = 'com.github.sharan'
-                artifactId = 'library-testing'
+                groupId = 'com.github.ballidaku'
+                artifactId = 'RepoAsLibraryTesting'
                 version = '1.0.0'
             }
         }
